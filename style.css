@@ -6,5 +6,22 @@
 }
 
 body{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, .3);
+    padding: 28px;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+    width: 90%;
+    margin: 10px;
+    /* for bigger screens */
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
 }
