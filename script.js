@@ -17,6 +17,7 @@ async function fetchAPI(word){
 
         if (result.title) {
             meaningContainer.style.display = "block";
+            infoText.style.display = "none";
             title.innerText = word;
             meaning.innerText = "N/A";
             audio.style.display = "none";
@@ -31,6 +32,7 @@ async function fetchAPI(word){
 
     } catch (error) {
         console.log(error);
+        infoText.innerText = `Sorry pal, we couldn't find meaning of ${word} You can try the search later `;
     }
 }
 
